@@ -33,13 +33,13 @@ function onToggleClick(evt) {
 }
 
   localStorage.getItem('theme')
-    if (theme === Theme.DARK) {
+    if ('theme' === Theme.DARK) {
     document.body.classList.add(Theme.DARK);
     document.body.classList.remove(Theme.LIGHT);
     localStorage.setItem('theme', Theme.DARK);
     themeToggle.checked = true;
     };
-    if (theme === Theme.LIGHT) {
+    if ('theme' === Theme.LIGHT) {
     document.body.classList.add(Theme.LIGHT);
     document.body.classList.remove(Theme.DARK);
     };
