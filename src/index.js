@@ -32,13 +32,32 @@ function onToggleClick(evt) {
   }
 }
 
-const reloadTheme = localStorage.getItem('theme'); 
-
-if (reloadTheme === Theme.Dark) {
+  localStorage.getItem('theme')
+    if (theme === Theme.DARK) {
     document.body.classList.add(Theme.DARK);
     document.body.classList.remove(Theme.LIGHT);
     localStorage.setItem('theme', Theme.DARK);
     themeToggle.checked = true;
-  }
-return;
- 
+    };
+    if (theme === Theme.LIGHT) {
+    document.body.classList.add(Theme.LIGHT);
+    document.body.classList.remove(Theme.DARK);
+    };
+
+
+
+
+
+
+
+
+// function reloadTheme() {
+//   localStorage.getItem('theme');
+//   if (reloadTheme === Theme.DARK) {
+//       document.body.classList.add(Theme.DARK);
+//       document.body.classList.remove(Theme.LIGHT);
+//       localStorage.setItem('theme', Theme.DARK);
+//       themeToggle.checked = true;
+//     }
+//   return;
+//   }
